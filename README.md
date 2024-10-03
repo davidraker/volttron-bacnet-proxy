@@ -17,7 +17,7 @@ we use a separate agent specifically for communicating with BACnet devices and m
 * bacpypes == 0.16.7
 
 # Documentation
-More detailed documentation can be found on [ReadTheDocs](https://volttron.readthedocs.io/en/modular/). The RST source
+More detailed documentation can be found on [ReadTheDocs](https://eclipse-volttron.readthedocs.io/en/latest/external-docs/volttron-bacnet-proxy/index.html#bacnet-proxy-agent). The RST source
 of the documentation for this component is located in the "docs" directory of this repository.
 
 # Installation
@@ -39,7 +39,7 @@ Create a configuration file for the BACnet Proxy Agent.
 }
 ```
 
-  ℹ️ **TIP:** The `device_address` field should contain the address bound to the network port over which BACnet communication will happen on the computer running VOLTTRON. This is NOT the address of any target device. See [BACnet Router Addressing](https://eclipse-volttron.readthedocs.io/en/latest/external-docs/volttron-bacnet-proxy/docs/source/bacnet-router-addressing.html).
+  ℹ️ **TIP:** The `device_address` field should contain the address bound to the network port over which BACnet communication will happen on the computer running VOLTTRON. This is NOT the address of any target device. See [BACnet Router Addressing](https://eclipse-volttron.readthedocs.io/en/latest/external-docs/volttron-bacnet-proxy_docs_root/docs/source/bacnet-router-addressing.html#bacnet-router-addressing).
 
 Install and start the BACnet proxy agent.
 
