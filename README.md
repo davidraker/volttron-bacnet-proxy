@@ -13,7 +13,7 @@ we use a separate agent specifically for communicating with BACnet devices and m
 # Requires
 
 * python >= 3.10
-* volttron >= 10.0
+* volttron-core >= 2.0.0rc0
 * bacpypes == 0.16.7
 
 # Documentation
@@ -26,12 +26,26 @@ Before installing, VOLTTRON should be installed and running.  Its virtual enviro
 Information on how to install of the VOLTTRON platform can be found
 [here](https://github.com/eclipse-volttron/volttron-core).
 
+Create a configuration file for the BACnet Proxy Agent.
+
+```json
+{
+    "device_address": "10.0.0.101",
+    "max_apdu_length": 1024,
+    "object_id": 599,
+    "object_name": "Volttron BACnet driver",
+    "vendor_id": 5,
+    "segmentation_supported": "segmentedBoth"
+}
+```
+
+  ℹ️ **TIP:** The `device_address` field should contain the address bound to the network port over which BACnet communication will happen on the computer running VOLTTRON. This is NOT the address of any target device. See [BACnet Router Addressing](https://eclipse-volttron.readthedocs.io/en/latest/external-docs/volttron-bacnet-proxy/docs/source/bacnet-router-addressing.html).
+
 Install and start the BACnet proxy agent.
 
 ```shell
 vctl install volttron-bacnet-proxy --agent-config <path to bacnet proxy config file> \
---vip-identity platform.bacnet_proxy \
---start
+--vip-identity platform.bacnet_proxy
 ```
 
 View the status of the installed agent
