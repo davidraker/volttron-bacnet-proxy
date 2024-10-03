@@ -41,7 +41,7 @@ Create a configuration file for the BACnet Proxy Agent.
 
   ℹ️ **TIP:** The `device_address` field should contain the address bound to the network port over which BACnet communication will happen on the computer running VOLTTRON. This is NOT the address of any target device. See [BACnet Router Addressing](https://eclipse-volttron.readthedocs.io/en/latest/external-docs/volttron-bacnet-proxy_docs_root/docs/source/bacnet-router-addressing.html#bacnet-router-addressing).
 
-Install and start the BACnet proxy agent.
+Install the BACnet Proxy Agent.
 
 ```shell
 vctl install volttron-bacnet-proxy --agent-config <path to bacnet proxy config file> \
