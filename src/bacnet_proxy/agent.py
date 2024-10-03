@@ -27,10 +27,11 @@ import logging
 import sys
 
 from volttron.client.known_identities import PLATFORM_DRIVER
+from volttron.client.logs import setup_logging
 from volttron.client.messaging import headers, topics
 from volttron.client.vip.agent import RPC, Agent
 from volttron.server.async_ import AsyncCall
-from volttron.utils import format_timestamp, load_config, setup_logging
+from volttron.utils import format_timestamp, load_config
 from volttron.utils.commands import vip_main
 
 __version__ = "0.1.0"
