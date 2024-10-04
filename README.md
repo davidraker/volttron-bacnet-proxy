@@ -10,13 +10,13 @@ BACnet Proxy is an agent that supports communication and management of BACnet de
 Communication with a BACnet device on a network happens via a single virtual BACnet device. In the VOLTTRON driver framework,
 we use a separate agent specifically for communicating with BACnet devices and managing the virtual BACnet device.
 
-# Requires
+## Pre-requisite
 
-- Python = 3.10
-- pip >= 24.0
-- poetry >= 1.8.2
-- python >= 3.10
-- volttron >= 11.0.0rc0
+Before installing this agent, VOLTTRON (>=11.0.0rc0) should be installed and running.  Its virtual environment should be active.
+Information on how to install of the VOLTTRON platform can be found
+[here](https://github.com/eclipse-volttron/volttron-core/tree/v10)
+
+## Automatically installed dependencies
 - bacpypes == 0.16.7
 
 # Documentation
@@ -24,10 +24,6 @@ More detailed documentation can be found on [ReadTheDocs](https://eclipse-volttr
 of the documentation for this component is located in the "docs" directory of this repository.
 
 # Installation
-
-Before installing, VOLTTRON should be installed and running.  Its virtual environment should be active.
-Information on how to install of the VOLTTRON platform can be found
-[here](https://github.com/eclipse-volttron/volttron-core).
 
 Create a configuration file for the BACnet Proxy Agent.
 
