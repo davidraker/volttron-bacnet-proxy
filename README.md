@@ -12,9 +12,13 @@ we use a separate agent specifically for communicating with BACnet devices and m
 
 # Requires
 
-* python >= 3.10
-* volttron-core >= 2.0.0rc0
-* bacpypes == 0.16.7
+- Python = 3.10
+- pip >= 24.0
+- git >= 2.25
+- poetry >= 1.8.2
+- python >= 3.10
+- volttron >= 11.0.0rc0
+- bacpypes == 0.16.7
 
 # Documentation
 More detailed documentation can be found on [ReadTheDocs](https://eclipse-volttron.readthedocs.io/en/latest/external-docs/volttron-bacnet-proxy/index.html#bacnet-proxy-agent). The RST source
